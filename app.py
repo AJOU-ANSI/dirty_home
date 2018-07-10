@@ -15,5 +15,9 @@ def home_apc():
 def registration():
 	return render_template("registration.html");
 
+@app.route('/result')
+def result():
+	return render_template("result.html");
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='80')
