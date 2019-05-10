@@ -5,19 +5,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_shake():
-    return render_template("info.html")
+    return render_template("shake.html")
 
 @app.route('/apc')
 def home_apc():
-    return render_template("main.html")
+    return render_template("apc.html")
 
-@app.route('/registration')
-def registration():
-	return render_template("registration.html");
-
-@app.route('/result')
+@app.route('/results/2018')
 def result():
-	return render_template("result.html");
+	return render_template("result_2018.html");
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='80')
+	app.run(host="0.0.0.0", port=8888, debug=True)
+    # app.run(host='0.0.0.0', port='80')
