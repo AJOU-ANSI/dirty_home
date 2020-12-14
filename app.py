@@ -11,9 +11,9 @@ def home_shake():
 def home_apc():
     return render_template("apc.html")
 
-@app.route('/results/2018')
+@app.route('/results/2019')
 def result():
-	return render_template("result_2018.html");
+	return render_template("result_2019.html")
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0", port=8888, debug=True)
